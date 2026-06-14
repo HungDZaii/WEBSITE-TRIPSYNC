@@ -1,66 +1,199 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌍 TripSync - Website Hỗ Trợ Quản Lý Và Lập Kế Hoạch Du Lịch Nhóm
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Giới thiệu
 
-## About Laravel
+TripSync là hệ thống website hỗ trợ quản lý và lập kế hoạch du lịch nhóm, giúp các thành viên dễ dàng phối hợp trong quá trình chuẩn bị và thực hiện chuyến đi.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Hệ thống cung cấp một nền tảng tập trung cho phép quản lý lịch trình, theo dõi chi tiêu, chia sẻ hình ảnh, quản lý checklist chuẩn bị và cộng tác giữa các thành viên trong nhóm.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Chức năng chính
 
-## Learning Laravel
+### 🔐 Quản lý tài khoản
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Đăng ký tài khoản
+* Đăng nhập / Đăng xuất
+* Khôi phục mật khẩu
+* Quản lý thông tin cá nhân
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🧳 Quản lý chuyến đi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Tạo chuyến đi
+* Cập nhật thông tin chuyến đi
+* Xóa chuyến đi
+* Mời thành viên tham gia
+* Tham gia chuyến đi bằng mã mời
+* Rời khỏi chuyến đi
 
-## Laravel Sponsors
+### 📅 Quản lý lịch trình
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* Thêm hoạt động
+* Chỉnh sửa hoạt động
+* Xóa hoạt động
+* Đề xuất hoạt động
+* Bình chọn hoạt động
+* Góp ý hoạt động
+* Chốt hoạt động
 
-### Premium Partners
+### 💰 Quản lý chi tiêu
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+* Thêm khoản chi
+* Chỉnh sửa khoản chi
+* Xóa khoản chi
+* Thống kê chi tiêu
+* Phân chia chi phí giữa các thành viên
+* Hỗ trợ tính toán công nợ tự động
 
-## Contributing
+### ✅ Checklist chuẩn bị
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Phân công thành viên
+* Đề xuất mục checklist
+* Duyệt đề xuất checklist
+* Cập nhật trạng thái hoàn thành
+* Chỉnh sửa checklist
+* Xóa mục checklist
 
-## Code of Conduct
+### 📸 Thư viện ảnh
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Tải ảnh lên
+* Xem ảnh
+* Tải ảnh về
+* Xóa ảnh không phù hợp
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 👥 Vai trò người dùng
 
-## License
+### Trưởng nhóm (Trip Owner)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* Toàn quyền quản lý chuyến đi
+* Quản lý thành viên
+* Điều phối lịch trình
+* Chốt hoạt động
+* Phân công checklist
+
+### Thành viên (Member)
+
+* Tham gia chuyến đi
+* Đề xuất và bình chọn hoạt động
+* Quản lý chi tiêu
+* Cập nhật checklist
+* Chia sẻ hình ảnh
+
+---
+
+## 🛠 Công nghệ sử dụng
+
+### Backend
+
+* PHP 8.x
+* Laravel 12
+* MySQL
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap 5
+
+### Công cụ hỗ trợ
+
+* Git & GitHub
+* Visual Studio Code
+* Figma
+
+---
+
+## 🗄️ Cơ sở dữ liệu
+
+Các bảng dữ liệu chính:
+
+* users
+* trips
+* trip_members
+* trip_days
+* trip_activities
+* activity_votes
+* activity_comments
+* trip_expenses
+* expense_splits
+* trip_photos
+* checklist_items
+
+---
+
+## 🚀 Cài đặt dự án
+
+### Clone project
+
+```bash
+git clone https://github.com/yourusername/tripsync.git
+cd tripsync
+```
+
+### Cài đặt thư viện
+
+```bash
+composer install
+```
+
+### Tạo file môi trường
+
+```bash
+cp .env.example .env
+```
+
+### Sinh Application Key
+
+```bash
+php artisan key:generate
+```
+
+### Cấu hình Database
+
+```env
+DB_DATABASE=tripsync
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Migration Database
+
+```bash
+php artisan migrate
+```
+
+### Chạy dự án
+
+```bash
+php artisan serve
+```
+
+Truy cập:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 🎯 Mục tiêu dự án
+
+* Tăng khả năng cộng tác giữa các thành viên trong nhóm.
+* Quản lý lịch trình tập trung.
+* Minh bạch hóa chi tiêu.
+* Hỗ trợ chuẩn bị chuyến đi hiệu quả.
+* Lưu trữ và chia sẻ dữ liệu chuyến đi trên cùng một nền tảng.
+
+---
+
+## 👨‍💻 Tác giả
+
+Nguyễn Mạnh Hùng
+
+Sinh viên ngành Kỹ thuật Phần mềm
+Trường Đại học Thủy Lợi
+
+Đồ án tốt nghiệp 2026
