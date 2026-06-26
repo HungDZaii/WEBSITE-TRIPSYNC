@@ -37,7 +37,25 @@ Route::middleware('auth')->group(function () {
     Route::get('/', [TripController::class, 'dashboard'])->name('dashboard');
 
     // Trips CRUD
-    Route::resource('trips', TripController::class);
+    Route::get('/trips', [TripController::class, 'index'])->name('trips.index');
+
+    // Form thêm trip
+    Route::get('/trips/create', [TripController::class, 'create'])->name('trips.create');
+
+    // Lưu trip mới
+    Route::post('/trips', [TripController::class, 'store'])->name('trips.store');
+
+    // Xem chi tiết trip
+    Route::get('/trips/{trip}', [TripController::class, 'show'])->name('trips.show');
+
+    // Form sửa trip
+    Route::get('/trips/{trip}/edit', [TripController::class, 'edit'])->name('trips.edit');
+
+    // Cập nhật trip
+    Route::put('/trips/{trip}', [TripController::class, 'update'])->name('trips.update');
+
+    // Xóa trip
+    Route::delete('/trips/{trip}', [TripController::class, 'destroy'])->name('trips.destroy');
 
     // Join trip
     Route::get('/join',              [TripController::class, 'showJoin'])->name('trips.join');
