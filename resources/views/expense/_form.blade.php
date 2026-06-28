@@ -26,11 +26,11 @@
             <label class="block text-sm font-medium text-gray-700 mb-1.5">Số tiền (₫) <span class="text-red-500">*</span></label>
             <input type="number" name="amount" value="{{ $val('amount', '') }}" step="1000"
                    class="{{ $inputClass }} @error('amount') {{ $errorClass }} @enderror"
-                   placeholder="Tối thiểu 0">
+                   placeholder="Tối thiểu 10000">
             @error('amount')
                 <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
             @else
-                <p class="mt-1 text-xs text-gray-400">Tối thiểu 0₫</p>
+                <p class="mt-1 text-xs text-gray-400">Tối thiểu 10000₫</p>
             @enderror
         </div>
 
